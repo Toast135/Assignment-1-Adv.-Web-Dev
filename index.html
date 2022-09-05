@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<header>
+		<!--navigation bar-->
+		<div class="flexbox-container">
+			<div class="box-1">
+				<img src="MEDIA/global.png" alt="Logo"/>		
+			</div>	
+				
+			<div class="box-2">
+				<p class="tagline">ITWD6.408 </p>
+			</div>
+			
+			<div class="box-3">
+				<div class="horizontal-nav">
+					<ul>
+						<li class="active"><a href="index.html">HOME</a></li>
+						<li><a href="form.html">FORMS</a></li>
+						<li><a href="xml-rss.html">XML/JSON</a></li>
+						<li><a href="js-demo.html">JAVASCRIPT</a></li>
+						<li><a href="my-research.html">RESEARCH</a></li>	
+					</ul>
+				</div>			
+			</div>			
+			<div class="box-4">
+				<p onclick="openNav()">≡</p>
+			</div>				
+		</div>	
+
+		<!--Curtain menu-->
+		<nav id="curtain-nav">
+			<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+			<div class="curtain-nav-content">
+				<ul>
+					<li class="active"><a href="index.html">HOME</a></li>
+					<li><a href="form.html">FORMS</a></li>
+					<li><a href="xml-rss.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li><a href="my-research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+	<main>
+		<div class="top-image">
+            <div class="home-title">
+				<h3>Advanced Internet and Web Learning Portfolio</h3>
+				<h1>I am Cullen Martin</h1>
+				<h4>And I'm a Web Developer</h4>
+			</div>
+        </div>
+
+		<div class="home-row-1">
+			<div class="home-bio">
+				<h3>BIO</h3>
+				<div class="home-bio-content">
+					<img class="bio-img" src="MEDIA/avatar.png">
+					<p>My personal intrests/hobbies include: Guitar, video games, hiking and tabletop RPGs. I am taking Advanced Internet and Web Development to broaden my knowledge of coding (HTML, CSS and Javascript specifically). I hope that when I leave EIT I can apply what I have learned here towards my chosen field of IT. </p>
+				</div>
+			</div>
+			<div class="home-webtech">
+				<h3>MY WEB TECHNOLOGIES</h3>
+				<div>
+					<p class="web-tech-content">TOP 5 WEB TECHNO I USE</p><br>
+					<p><span class="web-tech-content">1. Visual Studio Code:</span> a code editing software created by microsoft. It features code auto-completion and debugging as well as countless downloadable extentions for different conding languages and compilers.</p>
+					<p><span class="web-tech-content">2. GitHub:</span> an internet hosting service creted by GitHub inc. which specialises in version control and software development.</p>
+					<p><span class="web-tech-content">3. Google Drive:</span> a cloud-based file storage service created by google which features file syncronization across multiple devices and offline capabilities.</p>
+					<p><span class="web-tech-content">4. Google Chrome:</span> a web browser created by google and released in 2008, it is available on Windows, iOS, macOS, Android and Linux.</p>
+					<p><span class="web-tech-content">5. PostgreSQL:</span> a relational database management system created by the PostgreSQL Global Development Group in 1996.</p>
+				</div>	
+			</div>
+		</div>
+
+		<div class="home-row-2">
+			<h3>MY WEB DEVELOPMENT COMPETENCIES</h3>
+			<div class="home-boxes">
+				<div class="home-flip-box">
+					<div class="home-flip-box-inner">
+					<div class="home-flip-box-front">
+						<div>
+							<h3>MARK-UP (HTML5)</h3>
+						</div>
+						<div>
+							<img class="home-codelang-img" src="MEDIA/html5.png">
+						</div>
+					</div>
+					<div class="home-flip-box-back">
+						<h2>5/5: I am confident in my ability to use HTML in a web development context.</h2>
+					</div>
+					</div>
+				</div>
+				<div class="home-flip-box">
+					<div class="home-flip-box-inner">
+					<div class="home-flip-box-front">
+						<div>
+							<h3>STYLING (CSS3)</h3>
+						</div>
+						<div>
+							<img class="home-codelang-img" src="MEDIA/css3.png"></img>
+						</div>	
+					</div>
+					<div class="home-flip-box-back">
+						<h2>4/5: I am able to use CSS for styling with relative ease.</h2>
+					</div>
+					</div>
+				</div>
+				<div class="home-flip-box">
+					<div class="home-flip-box-inner">
+					<div class="home-flip-box-front">
+						<div>
+							<h3>JAVASCRIPT</h3>
+						</div>
+						<div>
+							<img class="home-codelang-img" src="MEDIA/javascript.png"></img>
+						</div>
+					</div>
+					<div class="home-flip-box-back">
+						<h2>3/5: I am able to use Javascript to an extent however there is more I wish to learn.</h2>
+					</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="home-row-3">
+			<div>
+				<h3>STATEMENT OF AUTHENTICITY</h3>
+			</div>
+			<div class="auth-statement">
+				<p>I confirm that:<br>
+					This is an original assessment and is entirely my own work.<br>
+					It contains no material previously published or written by another person or myself except where due<br>
+					acknowledgement is made in the text.<br>
+					No material which to a substantial extent, has been submitted for any other academic course, is included<br>
+					without acknowledgement.</p>
+			</div>
+		</div>
+	</main>
+	
+	<!---------------------------------------------------->	
+	<!--Footer-->
+	<footer>
+		<div class="footer-name"> 
+			© 2022 Cullen Martin
+		</div>
+		<div class="privacy-link">
+			<a href="privacy-policy.html">Privacy Policy</a>
+		</div>
+	</footer>
+	
+	<!--JS file-->
+	<script type="text/javascript" src="JS/javascript.js">
+	</script>
+
+</body>
+</html>
+

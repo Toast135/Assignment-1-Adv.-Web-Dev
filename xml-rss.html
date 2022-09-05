@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML/RSS</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>	
+	<header>
+		<!--navigation bar-->
+		<div class="flexbox-container">
+			<div class="box-1">
+				<img src="MEDIA/global.png" alt="Logo"/>		
+			</div>	
+				
+			<div class="box-2">
+				<p class="tagline">ITWD6.408 </p>
+			</div>
+			
+			<div class="box-3">
+				<div class="horizontal-nav">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="form.html">FORMS</a></li>
+						<li class="active"><a href="xml-rss.html">XML/JSON</a></li>
+						<li><a href="js-demo.html">JAVASCRIPT</a></li>
+						<li><a href="my-research.html">RESEARCH</a></li>	
+					</ul>
+				</div>			
+			</div>			
+			<div class="box-4">
+				<p onclick="openNav()">≡</p>
+			</div>				
+		</div>	
+
+		<!--Curtain menu-->
+		<nav id="curtain-nav">
+			<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+			<div class="curtain-nav-content">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="form.html">FORMS</a></li>
+					<li class="active"><a href="xml-rss.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li><a href="my-research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+	<main>
+        <div class="xml-rss-page">
+            <div class="form-selector">
+                <!--XML rules button-->						
+                <button onclick="toggleXml()" class="form-button-1" id="button-1-id" type="button">XML RULES</button>
+                <!--RSS button-->
+                <button onclick="toggleRss()" class="form-button-2" id="button-2-id" type="button">RSS</button>	 					
+            </div>
+
+			<div class="xml-rss-content">
+				<!--XML RULES-->
+				<div class="xml-title" id="xml-title-id">
+					<h2>XML Syntax Rules</h2><br>
+					<h4>6 important rules that must be adhered to in order to create a valid XML file:</h4>
+				</div>
+				<div class="xml-section" id="xml-section-id" >
+					<div class="rss-element">
+						<h3>Rule 1: XML Elements need to be nested correctly</h3><br>
+						<p>Any elements in an XML document must be nested within each other where applicable.</p><br>
+						<p class="code-sample"><i>Code sample: &lt;p&gt; &lt;b&gt; <b>This paragraph is in bold</b> &lt;/b&gt; &lt;/p&gt;</i></p>
+					</div>
+					<div class="rss-element">
+						<h3>Rule 2: XML attributes need to be quoted.</h3><br>
+						<p>XML attributes work the same as in HTML, however they always require quotation marks.</p><br>
+						<p class="code-sample"><i>Code sample: &lt;div class="topic-1"&gt;</i></p>
+					</div>
+					<div class="rss-element">
+						<h3>Rule 3: Correct format must be used when writing comments</h3><br>
+						<p>Comments are written the same way as in HTML. the comment must start with "&lt;!--" and end with "--&gt;". A comment cannot have two dashes in the middle.</p><br>
+						<p class="code-sample"><i>Code sample: &lt;!--This is a comment--&gt;</i></p>
+					</div>
+					<div class="rss-element">
+						<h3>Rule 4: White-space will be kept in XML</h3><br>
+						<p>Unlike HTML, XML will not shorten multiple spaces into a single space.</p><br>
+						<p class="code-sample"><i>Code sample: &lt;p&gt;Helloㅤㅤㅤworld!&lt;/p&gt; will display as "Helloㅤㅤㅤworld!"</i></p>
+					</div>
+					<div class="rss-element">
+						<h3>Rule 5: XML tags are case sensitive</h3><br>
+						<p>Caution should be used when writing an XML file as the recognised tag can differ between upper and lower case</p><br>
+						<p class="code-sample"><i>Code sample: &lt;Letter&gt; is a different tag to &lt;letter&gt;</i></p>
+					</div>
+					<div class="rss-element">
+						<h3>Rule 6: Entity references must be used</h3><br>
+						<p>Using a "&lt;" symbol, for example, within an element will create an error as the parser will think you are creating a new tag. Instead you must use an entity reference such as "&amp;lt;".</p><br>
+						<p class="code-sample"><i>Code sample: Will work: "&lt;p&gt;$30 &amp;lt; $200&lt;/p&gt;". This will create an error: "&lt;p&gt;$30 &lt; $200&lt;/p&gt;".</i></p>
+					</div>
+
+				</div>
+	
+				<!--RSS FEED-->
+				<div class="rss-title" id="rss-title-id">
+					<h2>Work with an XML RSS Feed</h2><br>
+					<h4>Use XMLHttpRequest Object to retrive RSS feed:</h4>
+				</div>
+				<div class="rss-section" id="rss-section-id" style="display: none;">
+				</div>
+			</div>
+            
+        </div>
+	</main>
+	
+	<!---------------------------------------------------->	
+	<!--Footer-->
+	<footer>
+		<div class="footer-name"> 
+			© 2022 Cullen Martin
+		</div>
+		<div class="privacy-link">
+			<a href="privacy-policy.html">Privacy Policy</a>
+		</div>
+	</footer>
+	
+	<!--JS file-->
+	<script type="text/javascript" src="JS/javascript.js">
+	</script>
+
+</body>
+</html>
+
